@@ -1,12 +1,11 @@
 {
   "name": "generator-sn-behavior",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Generator for shared behaviors for UI-Components in ServiceNow",
   "homepage": "",
   "author": {
     "name": "Matthew Collins",
-    "email": "matthew.g.collins3@gmail.com",
-    "url": ""
+    "email": "matthew.g.collins3@gmail.com"
   },
   "files": [
     "generators"
@@ -34,7 +33,7 @@
     "npm": ">= 4.0.0"
   },
   "dependencies": {
-    "yeoman-generator": "^3.1.1",
+    "yeoman-generator": "^5",
     "chalk": "^2.1.0",
     "yosay": "^2.0.2"
   },

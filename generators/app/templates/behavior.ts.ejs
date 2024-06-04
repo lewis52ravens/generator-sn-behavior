@@ -1,0 +1,20 @@
+import { actionTypes } from "@servicenow/ui-core";
+import { Behavior } from "<%- buildElementLoc %>";
+import { EventHandler, GenericCoeffectWithProps, ActionHandler } from "<%- defaultTypesLoc %>";
+
+export interface <%= stateName %> {
+    properties: <%= propsName %>,
+}
+
+export interface <%= propsName %> {
+
+}
+
+export interface <%= optionsName %> {
+
+}
+
+export const <%= normalBehaviorName %>: Behavior<'<%= behaviorName %>'> = {
+    name: '<%= behaviorName %>',
+
+};

@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "name": "Launch Program",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node",
+            "runtimeExecutable": "yo",
+            "runtimeArgs": [
+                "sn-behavior",
+                "--behavior-types-file",
+                "src_ts/build_element/behaviorTypes.ts",
+                "--build=element-file",
+                "src_ts/build_element/buildElement.ts",
+                "--default-types-file",
+                "src_ts/defaultTypes.d.ts"
+            ],
+            "cwd": "${workspaceFolder}/testing",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Debug Program",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node",
+            "cwd": "${workspaceFolder}/testing",
+            "console": "integratedTerminal",
+            "runtimeExecutable": "npx",
+            "runtimeArgs": [
+                "--node-options=\"--inspect\"",
+                "yo",
+                "sn-behavior",
+                "--behavior-types-file",
+                "src_ts/build_element/behaviorTypes.ts",
+                "--build=element-file",
+                "src_ts/build_element/buildElement.ts",
+                "--default-types-file",
+                "src_ts/defaultTypes.d.ts"
+            ]
+        }
+    ]
+}
